@@ -29,6 +29,7 @@ const App = () => {
         <p key={2}>Element 3</p>
       ]}
       <h2>List of Tasks</h2>
+      {/* anything can be given in task, taskIndex */}
       {tasks.map((task, taskIndex) => {
         return <p key={taskIndex}>{task.text}</p>;
       })}
