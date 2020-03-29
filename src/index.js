@@ -1,9 +1,9 @@
 import "./styles.css";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./App";
+
+const $appRoot = document.querySelector("#app");
+
+ReactDom.render(<App />, $appRoot);
